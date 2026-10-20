@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Order &amp; Contact | North Star Bakery</title>
+</head>
+<body>
+
+    <header>
+        <img src="bakery_assets/bakery-logo_c.png" alt="North Star Bakery logo which includes a drawing of a loaf of bread with a wheat sprig in the center of the loaf.">
+        <h1>Connect With Our Kitchen</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html"><strong>Pre-Order &amp; Contact</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hours & Location Information -->
+        <section>
+            <h2>Visit or Call Us</h2>
+            <p><strong>Address:</strong> 435 Home Street, West Seattle, WA</p>
+            <p><strong>Phone:</strong> (555) 019-2831</p>
+            <p><strong>Daily Hours:</strong> Tuesday through Friday 8am-6pm, Saturday 8am-2pm.</p>
+        </section>
+
+        <section>
+            <h2>Inquiry &amp; Pre-Order Request Form</h2>
+            <p>Planning an eventr or a special occcasion. Please reserve our signature loaf before it sells out? Please fill out the fields below, and our staff will reach out to confirm the details of your order!</p>
+            
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Your Contact Details</legend>
+                    
+                    <p>
+                        <label for="client-name">Full Name:</label>
+                        <input type="text" id="client-name" name="client-name" placeholder="John Doe" required>
+                    </p>
+                    
+                    <p>
+                        <label for="client-email">Email Address:</label>
+                        <input type="email" id="client-email" name="client-email" placeholder="john@example.com" required>
+                    </p>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Order &amp; Request Specifics</legend>
+                    
+                    <p>
+                        <label for="pickup-date">Requested Pickup Date:</label>
+                        <input type="date" id="pickup-date" name="pickup-date" required>
+                    </p>
+                    
+                    <p>
+                        <label for="request-type">Type of Request:</label>
+                        <select id="request-type" name="request-type" required>
+                            <option value="">-- Please select an option --</option>
+                            <option value="pre-order">Bakery Item Pre-Order</option>
+                            <option value="question">General Inquiry / Question</option>
+                            <option value="catering">Event Catering Quote</option>
+                        </select>
+                    </p>
+                    
+                    <p>
+                        <label for="item-details">Item Details &amp; Quantities:</label><br>
+                        <textarea id="item-details" name="item-details" rows="5" cols="40" placeholder="Example: 2 Signature Sourdough Loaves, 1 dozen croissants..." required></textarea>
+                    </p>
+                    
+                    <p>
+                        <label for="allergy-notes">Allergy &amp; Dietary Notes (If applicable):</label><br>
+                        <textarea id="allergy-notes" name="allergy-notes" rows="3" cols="40" placeholder="Please let us know if anyone has nut, dairy, or gluten sensitivities..."></textarea>
+                    </p>
+                </fieldset>
+                
+                <p>
+                    <button type="submit">Submit Request to our Staff</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; North Star Bakery. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
